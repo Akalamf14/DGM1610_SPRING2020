@@ -220,6 +220,7 @@ GameObject:
   - component: {fileID: 722003968}
   - component: {fileID: 722003969}
   - component: {fileID: 722003970}
+  - component: {fileID: 722003971}
   m_Layer: 0
   m_Name: GameManagerPracticeScripts
   m_TagString: Untagged
@@ -350,6 +351,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ac970bdac3c2ab4a964e4b79fa4d149, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &722003971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 722003961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b228ed645ec87494cba679c5f66d0c83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  money: 100
+  cost: 35
+  discount: 0.35
+  jacketAmount: 1
+  pantsAmount: 2
+  hatAmount: 4
 --- !u!1 &940569450
 GameObject:
   m_ObjectHideFlags: 0
