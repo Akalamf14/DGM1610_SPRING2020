@@ -5,6 +5,7 @@ using UnityEngine;
 public class Function : MonoBehaviour
 {
 
+    // functions are machines
     public float amount;
     public float money;
     public float cost;
