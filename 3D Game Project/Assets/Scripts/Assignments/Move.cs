@@ -21,6 +21,11 @@ public class Move : MonoBehaviour
         //without colliders the objects would just pass through
         // collide box
 
+        if(other.gameObject.name == "Obstacle 1")
+        {
+            Destroy(other.gameObject);
+        }
+
 
     }
         // other can be used in both instances because they are both contained to their respective function
