@@ -23,4 +23,18 @@ public class Character2Move : MonoBehaviour
 
         rb.AddForce(movement * speed);
     }
+
+    void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.name == "Obstacle 1")
+        {
+            Destroy(other.gameObject);
+        }
+
+        if(other.gameObject.name == "Obstacle 2")
+        {
+            Destroy(other.gameObject);
+        }
+
+    }
 }

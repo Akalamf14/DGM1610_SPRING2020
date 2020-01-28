@@ -26,6 +26,11 @@ public class Move : MonoBehaviour
             Destroy(other.gameObject);
         }
 
+        if(other.gameObject.name == "Obstacle 2")
+        {
+            Destroy(other.gameObject);
+        }
+
 
     }
         // other can be used in both instances because they are both contained to their respective function
