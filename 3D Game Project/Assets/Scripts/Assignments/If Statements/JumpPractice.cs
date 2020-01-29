@@ -27,22 +27,22 @@ public class JumpPractice : MonoBehaviour
             isGrounded = false;
         }
 
-        if(Input.GetKeyDown(KeyCode.RightArrow))
+        if(Input.GetKey(KeyCode.RightArrow))
         {
             gameCharacter.AddForce(new Vector3(5,0,0) , ForceMode.Impulse);
         }
 
-        if(Input.GetKeyDown(KeyCode.LeftArrow))
+        if(Input.GetKey(KeyCode.LeftArrow))
         {
             gameCharacter.AddForce(new Vector3(-5,0,0) , ForceMode.Impulse);
         }
 
-        if(Input.GetKeyDown(KeyCode.UpArrow))
+        if(Input.GetKey(KeyCode.UpArrow))
         {
             gameCharacter.AddForce(new Vector3(0,0,5), ForceMode.Impulse);
         }
 
-        if(Input.GetKeyDown(KeyCode.DownArrow))
+        if(Input.GetKey(KeyCode.DownArrow))
         {
             gameCharacter.AddForce(new Vector3(0,0,-5), ForceMode.Impulse);
         }

@@ -164,7 +164,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 157183508}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7db23ce45b0977648a1ad94cae01b914, type: 3}
   m_Name: 
@@ -321,13 +321,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 398170524}
-  m_LocalRotation: {x: 0.10479414, y: -0, z: -0, w: 0.99449396}
-  m_LocalPosition: {x: -7.28, y: 3.47, z: -22.03}
+  m_LocalRotation: {x: 0.104170084, y: -0.10837113, z: -0.0114195375, w: 0.9885717}
+  m_LocalPosition: {x: 7.93, y: 5.13, z: -29.81}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 12.031, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 11.741, y: -12.784, z: -2.6430001}
 --- !u!114 &398170528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -335,13 +335,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 398170524}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ba52dc7f7315d474a964fe624ac784da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerObject: {fileID: 157183514}
-  distanceFromObject: 6
+  distanceFromObject: 10
 --- !u!114 &398170529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -724,6 +724,7 @@ GameObject:
   - component: {fileID: 1093620230}
   - component: {fileID: 1093620236}
   - component: {fileID: 1093620235}
+  - component: {fileID: 1093620237}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -811,7 +812,7 @@ Transform:
   m_GameObject: {fileID: 1093620229}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 5.98, y: 6.41, z: -14.466797}
-  m_LocalScale: {x: 1.8257798, y: 0.995405, z: 0.50286776}
+  m_LocalScale: {x: 1.3748653, y: 1.0739424, z: 1.1724063}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -845,6 +846,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isGrounded: 1
+--- !u!114 &1093620237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093620229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f03fd676585139d49b7b17da72357ba1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  verticalInput: 2
+  horizontalInput: 10
+  turnSpeed: 200
 --- !u!1 &1881219604
 GameObject:
   m_ObjectHideFlags: 0
