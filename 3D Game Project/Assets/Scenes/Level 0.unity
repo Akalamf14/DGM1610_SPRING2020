@@ -627,9 +627,10 @@ GameObject:
   - component: {fileID: 972937143}
   - component: {fileID: 972937142}
   - component: {fileID: 972937146}
+  - component: {fileID: 972937148}
   m_Layer: 0
-  m_Name: Obstacle 2
-  m_TagString: Obstacle
+  m_Name: Door
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -724,6 +725,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &972937148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 972937141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67392b8cbb4af6e4898597ba845126c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1093620229
 GameObject:
   m_ObjectHideFlags: 0
