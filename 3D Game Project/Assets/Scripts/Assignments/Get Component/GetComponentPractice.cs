@@ -7,8 +7,8 @@ public class GetComponentPractice : MonoBehaviour
 
     public GameObject otherGameObject;
 
-    private AnotherScript AnotherScript;
-    private YetAnotherScript YetAnotherScript;
+    private AnotherScript anotherScript;
+    private YetAnotherScript yetAnotherScript;
 
     private BoxCollider boxCol;
 
@@ -22,8 +22,8 @@ public class GetComponentPractice : MonoBehaviour
         //when you are referencing another script attached to another object you must first reference that object before you can access its script
         //example is the yetAnotherScript. we first reference the otherGameObject before we can access the death count.
 
-        AnotherScript = GetComonent<AnotherScript>();
-        YetAnotherScript = otherGameObject.GetComponent<YetAnotherScript>();
+      //  anotherScript = GetComonent<AnotherScript>();
+        yetAnotherScript = otherGameObject.GetComponent<YetAnotherScript>();
         
         boxCol = otherGameObject.GetComponent<BoxCollider>();
 
@@ -37,8 +37,8 @@ public class GetComponentPractice : MonoBehaviour
     }
     void start()
     {
-        Debug.Log("The player's score is" + AnotherScript.playerScore);
-        Debug.Log("The player has died" + YetAnotherScript.numberOfPlayerDeaths + "times");
+        Debug.Log("The player's score is" + anotherScript.playerScore);
+        Debug.Log("The player has died" + yetAnotherScript.numberOfPlayerDeaths + "times");
 
         boxCol.size = new Vector3(3,3,3);
         //we can use this variable boxCol to address any of the parameters on that component on the other game object.

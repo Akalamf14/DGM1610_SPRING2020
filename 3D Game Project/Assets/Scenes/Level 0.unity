@@ -489,6 +489,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 722003963}
+  - component: {fileID: 722003964}
+  - component: {fileID: 722003962}
   m_Layer: 0
   m_Name: GameManagerPracticeScripts
   m_TagString: Untagged
@@ -496,6 +498,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &722003962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 722003961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd63351200c37e74b99e91173a23e34f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerScore: 9001
 --- !u!4 &722003963
 Transform:
   m_ObjectHideFlags: 0
@@ -510,6 +525,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &722003964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 722003961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8614f139c20d0b5428dabceead3d5247, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  otherGameObject: {fileID: 0}
 --- !u!1 &940569450
 GameObject:
   m_ObjectHideFlags: 0
