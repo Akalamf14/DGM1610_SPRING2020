@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Arrays : MonoBehaviour
 {
-    int[] myIntArray = new [5];
+    int[] myIntArray = new int [5];
 
     int[] anotherArray = {12, 76, 8, 937, 980};
 
@@ -21,6 +21,8 @@ public class Arrays : MonoBehaviour
         myIntArray[0] = 12;
         myIntArray[1] = 25;
         myIntArray[2] = 5;
+        myIntArray[3] = 153;
+        myIntArray[4] = 2;
 
         players = GameObject.FindGameObjectsWithTag("Player");
 
