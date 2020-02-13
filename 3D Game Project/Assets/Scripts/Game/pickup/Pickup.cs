@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class pickup : MonoBehaviour
+public class Pickup : MonoBehaviour
 {
     public int pointsToAdd;
+    public string pickuptype;
+    
 
  void OnTriggerEnter(Collider other)
  {
