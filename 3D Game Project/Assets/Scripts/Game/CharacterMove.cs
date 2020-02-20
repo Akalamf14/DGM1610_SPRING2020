@@ -13,6 +13,7 @@ public class CharacterMove : MonoBehaviour
     Rigidbody gameCharacter;
 
     public GameObject projectilePrefab;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -38,6 +39,12 @@ public class CharacterMove : MonoBehaviour
         {
             gameCharacter.AddForce(new Vector3(0,10,0), ForceMode.Impulse);
             isGrounded = false;
+        }
+
+        if(Input.GetKeyDown(KeyCode.RightControl))
+        {
+            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+
         }
 
       
