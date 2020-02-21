@@ -21,7 +21,7 @@ public class SpawnManager : MonoBehaviour
         
         if(Input.GetKeyDown(KeyCode.E))
         {
-            Instantiate(enemyPrefab[enemyIndex], new Vector3(0,0,0), enemyPrefab[enemyIndex].transform.rotation);
+            Instantiate(enemyPrefab[enemyIndex], new Vector3(0,14,0), enemyPrefab[enemyIndex].transform.rotation);
 
         }
 
