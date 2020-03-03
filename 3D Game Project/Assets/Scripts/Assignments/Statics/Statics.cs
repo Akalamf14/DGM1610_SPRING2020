@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿/*using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -27,3 +27,4 @@ public class Statics : MonoBehaviour
     // Static means you can't create instances of that variable or class
 
 }
+*/
