@@ -10,7 +10,7 @@ public class bullet : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-      // StartCoroutine(DestroyBullet);
+       //StartCoroutine(DestroyBullet);
     }
 
     void OnCollisionEnter(Collision other) // other is arbitrary - we could substitute it with anything
@@ -25,8 +25,8 @@ public class bullet : MonoBehaviour
             // health != null -- if health is not 0 or below (negative numbers)
             {
 
-            health.TakeDamage(damage);
-            Debug.Log("ouch, you hit me!");
+             health.TakeDamage(damage);
+             Debug.Log("ouch, you hit me!");
 
             }
         }
@@ -34,7 +34,7 @@ public class bullet : MonoBehaviour
        
     }
 
-    /*
+   /*
     IEnumerator DestroyBullet()
     {
         yield return new WaitForSeconds(time);

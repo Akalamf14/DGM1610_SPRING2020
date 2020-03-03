@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿/*
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -59,3 +60,4 @@ public class Variables : MonoBehaviour
 //fixed update - irregular (physics) and/or (animation)
 //Late update - end at every cycle
 // update is based on CPU
+*/

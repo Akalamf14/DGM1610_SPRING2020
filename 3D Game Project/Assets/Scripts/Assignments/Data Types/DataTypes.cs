@@ -1,9 +1,11 @@
-﻿using System.Collections;
+﻿/*
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class DataTypes : MonoBehaviour
 {
+*/
 
     /* There are usually 2 categories of Data Types
     1. VALUE - contain some value (usually numbers)
@@ -26,6 +28,7 @@ public class DataTypes : MonoBehaviour
 
     */
 
+   /*
     void start()
     {
     // Value Type Example
@@ -39,3 +42,4 @@ public class DataTypes : MonoBehaviour
     }
 
 }
+*/

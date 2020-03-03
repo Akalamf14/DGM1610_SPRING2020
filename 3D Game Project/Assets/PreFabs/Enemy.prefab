@@ -110,9 +110,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6af119cabe703c4ca34642962ff3ef3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 6401322663210350802}
   moveSpeed: 100
-  damage: 0
+  damage: 2
 --- !u!65 &6401322663210350803
 BoxCollider:
   m_ObjectHideFlags: 0

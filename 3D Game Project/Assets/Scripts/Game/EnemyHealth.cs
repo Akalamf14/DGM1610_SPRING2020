@@ -7,7 +7,7 @@ public class EnemyHealth : MonoBehaviour
     public int currentHealth;
     public int maxHealth = 3;
     public Transform spawnPoint;
-    public int points;
+    public int points = 10;
 
     // Start is called before the first frame update
     void Start()

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿/*
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -50,3 +51,4 @@ public class PracticePlayer
     //this is an example of an auto-implemented property
     public int Health{ get; set; }
 }
+*/

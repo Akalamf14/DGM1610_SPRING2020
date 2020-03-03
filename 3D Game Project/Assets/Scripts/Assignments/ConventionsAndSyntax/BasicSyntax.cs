@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿/*
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,6 +8,7 @@ public class BasicSyntax : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+    */
          /* 
          Semi Colon is used to terminate/End statements
          the dot oporator or Period is used to separate words in our code
@@ -16,6 +18,7 @@ public class BasicSyntax : MonoBehaviour
          compound item contains MANY items
           */
 
+       /*
         Debug.Log(transform.position.x); 
 
         // transform (position, rotation, and scale)
@@ -34,3 +37,5 @@ public class BasicSyntax : MonoBehaviour
         
     }
 }
+*/
+
