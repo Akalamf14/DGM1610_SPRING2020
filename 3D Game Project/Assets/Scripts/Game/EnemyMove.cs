@@ -29,7 +29,7 @@ public class EnemyMove : MonoBehaviour
         //transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);
     }
 
-    void fixedupdate()
+    void FixedUpdate()
     {
         enemyRb.AddForce((player.transform.position - transform.position).normalized  *  moveSpeed);
     }
