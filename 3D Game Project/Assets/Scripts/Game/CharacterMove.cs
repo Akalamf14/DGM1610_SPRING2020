@@ -9,8 +9,9 @@ public class CharacterMove : MonoBehaviour
     public float horizontalInput;
     public float turnSpeed;
 
+    public float jumpHeight;
     public bool isGrounded;
-    Rigidbody gameCharacter;
+    private Rigidbody gameCharacter;
 
     public GameObject projectilePrefab;
     
@@ -26,6 +27,17 @@ public class CharacterMove : MonoBehaviour
         isGrounded = true;
     }
 
+    // Optional
+    /* void OnCollisionEnter(Collision other)
+    {
+        if(other.gameObject.CompareTag("Floor"))
+        {
+            isGrounded = true;
+            Debug.Log("Colliding with floor");
+        }
+    }
+    */
+
         // Update is called once per frame
     void Update()
     {
@@ -37,11 +49,14 @@ public class CharacterMove : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
-            gameCharacter.AddForce(new Vector3(0,10,0), ForceMode.Impulse);
+            gameCharacter.AddForce(new Vector3(0,20,0), ForceMode.Impulse);
             isGrounded = false;
+
+            //optional - make character jump
+            //gameCharacter.AddForce(Vector3.up * jumpheight * 1000 * Time.deltaTime);
         }
 
-        if(Input.GetKeyDown(KeyCode.RightControl))
+        if(Input.GetKeyDown(KeyCode.F))
         {
             Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
 
