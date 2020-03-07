@@ -106,5 +106,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3d8f36ad63145b4c8a6e6121b14d9b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointsToAdd: 2
+  PointsToAdd: 2
   pickuptype: Money

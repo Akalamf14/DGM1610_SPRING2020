@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Pickup : MonoBehaviour
 {
-    public int pointsToAdd;
+    public int PointsToAdd;
     public string pickuptype;
     
 
@@ -12,8 +12,8 @@ public class Pickup : MonoBehaviour
  {
      if(other.gameObject.CompareTag("Player"))
      {
-         scoreManager.AddPoints (pointsToAdd);
-         Destroy(gameObject);
+        CharacterScore.AddPoints(PointsToAdd);
+        Destroy(gameObject);
      }
  }
 }

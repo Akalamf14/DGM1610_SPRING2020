@@ -10,7 +10,7 @@ public class CharacterScore : MonoBehaviour
 
     public Text winText;
 
-    public Text scoreText;
+    private Text scoreText;
     
     void Awake()
     {
