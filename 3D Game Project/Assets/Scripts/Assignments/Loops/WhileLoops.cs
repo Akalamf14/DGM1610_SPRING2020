@@ -19,6 +19,7 @@ public class WhileLoops : MonoBehaviour
             Debug.Log("I've washed a cup!");
             cupsInTheSink--;
         }
+
     }
 
     // Update is called once per frame

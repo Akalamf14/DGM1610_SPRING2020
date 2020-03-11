@@ -6,6 +6,8 @@ using UnityEngine;
 public class ForLoops : MonoBehaviour
 {
 
+    limited loop - finite can only go up to a certain amount
+
     //most common loop 
     // works by creating a loop with a controlable number of iterations
     // first checks for conditions
@@ -16,9 +18,10 @@ public class ForLoops : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-      for(int i = 0; i < numEnemies; i++)
+      for(int i = 0; i < numEnemies; i++) // i++ means counting by 1
+      //if you want to count by more than one use i+ and whatever number you want to count up by
       {
-          Debug.Log("Creating Enemy number" + i);
+          Debug.Log("Creating Enemy number: " + i);
       }  
       //there are three arguments
       // int i = 0 is an interator - used to count through the iterations of the loops or the loops themselves

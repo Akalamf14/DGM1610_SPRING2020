@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class scoreManager : MonoBehaviour
-{
+{/*
     public static int score;
     // static means we cannot alter the variable, we cant create an instance of this variable
 
@@ -25,4 +25,5 @@ public class scoreManager : MonoBehaviour
         score += pointsToAdd;
         Debug.Log("Game Score;" + score);
     }
+    */
 }

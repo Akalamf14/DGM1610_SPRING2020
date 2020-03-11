@@ -33,4 +33,19 @@ public class EnemyMove : MonoBehaviour
     {
         enemyRb.AddForce((player.transform.position - transform.position).normalized  *  moveSpeed);
     }
+
+    void OnCollisionEnter(Collision other)
+    {
+        if(other.gameObject.CompareTag("Player"))
+        {
+            var hit = other.gameObject;
+            var health = hit.GetComponent<PlayerHealth>();
+
+            if(health != null)
+            {
+                health.TakeDamage(damage);
+                Debug.Log("Player Has Been Hit");
+            }
+        }
+    }
 }
