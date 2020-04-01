@@ -12,7 +12,7 @@ public class Pickup : MonoBehaviour
  {
      if(other.gameObject.CompareTag("Player"))
      {
-        ScoreManager.AddPoints(PointsToAdd);
+        scoreManager.AddPoints(PointsToAdd);
         Destroy(gameObject);
      }
  }
