@@ -13,7 +13,8 @@ public class EnemyHealth : MonoBehaviour
     void Start()
     {
         currentHealth = maxHealth;
-        spawnPoint = GameObject.Find("SpawnPoint").transform;
+       // spawnPoint = gameObject.Find("SpawnPoint").transform;
+       
     }
 
     public void TakeDamage(int amount)
@@ -32,6 +33,8 @@ public class EnemyHealth : MonoBehaviour
             transform.rotation = spawnPoint.rotation;
             //reset enemy health
             currentHealth = maxHealth;
+
+            scoreManager.AddPoints(points);
         }
     }
 

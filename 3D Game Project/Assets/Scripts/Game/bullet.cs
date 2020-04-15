@@ -10,11 +10,14 @@ public class bullet : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       //StartCoroutine(DestroyBullet);
+       StartCoroutine(DestroyBullet());
     }
 
     void OnCollisionEnter(Collision other) // other is arbitrary - we could substitute it with anything
     {
+
+        // other.gameObject.GetComponent<EnemyHealth>();
+
         if(other.gameObject.CompareTag("Enemy"))
         {
             var hit = other.gameObject;
@@ -34,18 +37,12 @@ public class bullet : MonoBehaviour
        
     }
 
-   /*
+   
     IEnumerator DestroyBullet()
     {
         yield return new WaitForSeconds(time);
         Destroy(gameObject);
 
     }
-    */
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }
