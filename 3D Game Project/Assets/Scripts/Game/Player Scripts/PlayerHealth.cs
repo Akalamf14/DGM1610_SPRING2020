@@ -1,13 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
     public int currentHealth;
-    public int maxHealth = 5;
+    public const int maxHealth = 5;
     public Transform spawnPoint;
     public int points = 1;
+
+    public Text hp;
+    public Text maxHP;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +39,7 @@ public class PlayerHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        hp.text = currentHealth.ToString();
+        maxHP.text = maxHealth.ToString();
     }
 }
