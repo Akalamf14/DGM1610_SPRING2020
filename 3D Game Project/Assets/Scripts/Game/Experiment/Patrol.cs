@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class Patrol : MonoBehaviour
 {
-    public GameObject EnemiesToPatrol;
+    
     public Transform[] points;
     private int destPoint = 0;
     private NavMeshAgent agent;
