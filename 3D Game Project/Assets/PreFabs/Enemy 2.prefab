@@ -33,7 +33,7 @@ Transform:
   m_GameObject: {fileID: 7255436756443327922}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 15.3, y: 8.5, z: 22}
-  m_LocalScale: {x: 12.08609, y: 12.08609, z: 12.08609}
+  m_LocalScale: {x: 9, y: 9, z: 9}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -158,6 +158,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wanderRadius: 0
   wanderTime: 0
+  speed: 0
+  alertDist: 0
+  attackDist: 0
+  damage: 0
 --- !u!195 &3139245197936169175
 NavMeshAgent:
   m_ObjectHideFlags: 0
