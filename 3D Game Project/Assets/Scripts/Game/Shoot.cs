@@ -23,7 +23,7 @@ public class Shoot : MonoBehaviour
 
             clone = (Rigidbody)Instantiate(projectile, shootPoint.position, projectile.rotation);
 
-            clone.velocity = shootPoint.TransformDirection(Vector3.forward * shootSpeed);
+            clone.velocity = shootPoint.TransformDirection(gameObject.transform.forward * shootSpeed);
         }
     }
 }

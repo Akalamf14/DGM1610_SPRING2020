@@ -8968,6 +8968,12 @@ PrefabInstance:
       propertyPath: speed
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 4295600462058444782, guid: b133108ed4bea0643bf0131c5219640d,
+        type: 3}
+      propertyPath: projectilePrefab
+      value: 
+      objectReference: {fileID: 4679325775287912424, guid: 089d29985f7737c41853b85337160ace,
+        type: 3}
     m_RemovedComponents:
     - {fileID: 4295600462058444772, guid: b133108ed4bea0643bf0131c5219640d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b133108ed4bea0643bf0131c5219640d, type: 3}
