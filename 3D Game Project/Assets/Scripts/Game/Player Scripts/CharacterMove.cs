@@ -14,12 +14,16 @@ public class CharacterMove : MonoBehaviour
     private Rigidbody gameCharacter;
 
     public GameObject projectilePrefab;
+
+    Vector3 startPos;
     
 
     // Start is called before the first frame update
     void Start()
     {
         gameCharacter = GetComponent<Rigidbody>();
+
+        startPos = this.transform.position;
     }
 
     void OnCollisionStay()
@@ -60,6 +64,11 @@ public class CharacterMove : MonoBehaviour
         {
             Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
 
+        }
+
+        if(Input.GetKeyDown(KeyCode.R))
+        {
+            gameCharacter.transform.position = startPos;
         }
 
       
