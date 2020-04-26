@@ -7,10 +7,13 @@ public class bullet : MonoBehaviour
     public int damage = 1;
     public int time = 5;
 
+    public float fuseTime;
+
     // Start is called before the first frame update
     void Start()
     {
        StartCoroutine(DestroyBullet());
+
     }
 
     void OnCollisionEnter(Collision other) // other is arbitrary - we could substitute it with anything
