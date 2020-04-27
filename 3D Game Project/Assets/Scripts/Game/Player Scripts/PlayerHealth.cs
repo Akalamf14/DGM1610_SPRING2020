@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public int currentHealth;
+    public static int currentHealth;
     public const int maxHealth = 5;
     public Transform spawnPoint;
     public int points = 1;
@@ -35,6 +35,11 @@ public class PlayerHealth : MonoBehaviour
 
             currentHealth = maxHealth;
         }
+    }
+
+    public static void AddPoints(int healthAmt)
+    {
+        currentHealth += healthAmt;
     }
     // Update is called once per frame
     void Update()

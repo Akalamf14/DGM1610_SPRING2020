@@ -51,6 +51,8 @@ public class CharacterMove : MonoBehaviour
         transform.Rotate(Vector3.up * turnSpeed * Time.deltaTime * horizontalInput);
         transform.Translate(Vector3.forward * speed * Time.deltaTime * verticalInput);
 
+    
+
         if(Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             gameCharacter.AddForce(new Vector3(0,20,0), ForceMode.Impulse);

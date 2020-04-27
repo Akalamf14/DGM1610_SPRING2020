@@ -12,10 +12,18 @@ public class HealthPickup : Pickup
         
     }
 
+    void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.CompareTag("Player"))
+        {
+            PlayerHealth.AddPoints(healthAmt);
+            Destroy(gameObject);
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
         print("You Gained " + healthAmt + " Health!");
-        Destroy(gameObject);
     }
 }
